@@ -3,6 +3,7 @@
 import json
 import os
 import requests
+import time
 
 from mpd import MPDClient
 
@@ -64,3 +65,5 @@ while True:
 				open_last = is_open
 
 				handleStateChange(is_open)
+
+	time.sleep(2)
